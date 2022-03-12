@@ -1,6 +1,15 @@
+from live import welcome
+from Score import add_score
+
+
 def maingame():
-    from live import load_game, welcome
-    print(welcome(), load_game())
+    name, difficulty = welcome()
+    add_score(difficulty)
 
 
-maingame()
+
+
+if __name__ == '__main__':
+    maingame()
+
+
