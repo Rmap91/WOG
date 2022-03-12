@@ -1,7 +1,7 @@
 import GuessGame
 import MemoryGame
 import CurrencyRuoletteGame
-
+from Score import add_score
 
 
 def load_game(name):
@@ -29,16 +29,18 @@ def load_game(name):
                 print("you entered a wrong number")
         except ValueError:
             print("you entered a non number value")
-
-    print(game_list[choose](difficulty))
+    win = game_list[choose](difficulty)
+    print(win)
+    if win:
+        add_score(difficulty)
     return difficulty
+
 
 
 def welcome():
     name = input("Please enter your name: ")
     print(f"Hello {name} and welcome to the World of Games (WoG). \nHere you can find many cool games to play.")
     difficulty = load_game(name)
-
     return name, difficulty
 
 
