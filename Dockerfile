@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+WORKDIR /app
+COPY . /app
+RUN apt-get update -y
+RUN apt-get install -y python3
+RUN apt-get install -y pip
+RUN pip install selenium
+RUN pip install flask
+RUN pip install webdriver-manager
+RUN pip install currencyconverter
