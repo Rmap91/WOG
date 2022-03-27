@@ -3,7 +3,7 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
 
-        def customImage = docker.build("rmap91/'worldofgames:wog")
+        def customImage = docker.build("rmap91/'world")
 
         /* Push the container to the custom Registry */
         customImage.push()
