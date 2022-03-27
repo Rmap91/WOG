@@ -1,9 +1,9 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://hub.docker.com/', 'dockerhub') {
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
 
-        def customImage = docker.build("rmap91:wog")
+        def customImage = docker.build("rmap91:world_of_Games")
 
         /* Push the container to the custom Registry */
         customImage.push()
