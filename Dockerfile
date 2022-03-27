@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+FROM python:3
 WORKDIR /app
 COPY . /app
 RUN apt-get update -y
-RUN apt-get install -y python3
+#RUN apt-get install -y python3
 RUN apt-get install -y python3-pip
 RUN pip install selenium
 RUN pip install flask
