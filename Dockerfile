@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM python:latest
 WORKDIR /app
 COPY . /app
 #RUN apt-get install -y python3
