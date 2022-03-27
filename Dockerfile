@@ -1,4 +1,5 @@
 FROM python:latest
+WORKDIR https://github.com/Rmap91/WOG
 COPY . /app
 #RUN apt-get install -y python3
 RUN apt-get update && apt-get install -y python3-pip net-tools
