@@ -2,8 +2,8 @@ FROM python:latest
 WORKDIR https://github.com/Rmap91/WOG
 COPY . /app
 #RUN apt-get install -y python3
-RUN apt-get update && apt-get install -y python3-pip net-tools
-RUN pip install selenium
-RUN pip install flask
-RUN pip install webdriver-manager
-RUN pip install currencyconverter
+RUN apt-get update && apt-get install -y python3-pip
+RUN pip3 install selenium
+RUN pip3 install flask
+RUN pip3 install webdriver-manager
+RUN pip3 install currencyconverter
