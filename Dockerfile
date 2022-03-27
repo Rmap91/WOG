@@ -7,4 +7,4 @@ RUN pip3 install selenium
 RUN pip3 install flask
 RUN pip3 install webdriver-manager
 RUN pip3 install currencyconverter
-CMD ["python3", "e2e.py"]
+CMD tail -f /dev/null
