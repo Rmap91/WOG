@@ -12,7 +12,7 @@ pipeline {
         ], extensions: [
           [$class: 'WipeWorkspace']
         ], userRemoteConfigs: [
-          [credentialsId: 'ee2e6241-7a8b-4f40-94b9-ae8a6d1d68a3', url: 'https://github.com/Rmap91/WOG']
+          [credentialsId: '***', url: 'https://github.com/Rmap91/WOG']
         ]]
       }
     }
